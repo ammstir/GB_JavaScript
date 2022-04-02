@@ -24,18 +24,12 @@
       const a = +prompt("Введите a:");
       const b = +prompt("Введите b:");
 
-      switch (true) {
-        case a > 0 && b > 0:
-          console.log(a - b);
-          break;
-        case a < 0 && b < 0:
-          console.log(a * b);
-          break;
-        case (a < 0 && b > 0) || (a > 0 && b < 0):
-          console.log(a + b);
-          break;
-        default:
-          break;
+      if (a > 0 && b > 0) {
+        console.log(a - b);
+      } else if (a < 0 && b < 0) {
+        console.log(a * b);
+      } else if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+        console.log(a + b);
       }
     </script>
   </body>

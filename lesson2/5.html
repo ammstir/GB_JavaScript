@@ -32,6 +32,15 @@ Infinity делать не нужно, однако, в случае если б
     <script>
       "use strict";
 
+      /**
+       * Возвращает результат указанной операции. Если операция неизвестна,
+       * то возвращает NaN
+       * @param {number} arg1 - Значение arg1.
+       * @param {number} arg2 - Значение arg2.
+       * @param {string} operation - Операция действия над arg1 и arg2.
+       * Сейчас реализованы "+", "-", "*", "/".
+       * @returns {number} Результат указанной операции над arg1 и arg2.
+       */
       function mathOperation(arg1, arg2, operation) {
         switch (operation) {
           case "+":
@@ -47,22 +56,45 @@ Infinity делать не нужно, однако, в случае если б
         }
       }
 
+      /**
+       * Сложить два числа.
+       * @param {number} a - Значение a.
+       * @param {number} b - Значение b.
+       * @returns {number} Сумма a и b
+       */
       function sum(a, b) {
         return a + b;
       }
 
+      /**
+       * Вычесть из большего числа меньшее.
+       * @param {number} a - Значение a.
+       * @param {number} b - Значение b.
+       * @returns {number} Разница чисел по модулю
+       */
       function diff(a, b) {
         if (a > b) {
           return a - b;
-        } else {
-          return b - a;
         }
+        return b - a;
       }
 
+      /**
+       * Умножить два числа.
+       * @param {number} a - Значение a.
+       * @param {number} b - Значение b.
+       * @returns {number} Произведение a и b.
+       */
       function multiply(a, b) {
         return a * b;
       }
 
+      /**
+       * Разделить первое число на второе.
+       * @param {number} a - Значение a.
+       * @param {number} b - Значение b.
+       * @returns {number} Частное a и b.
+       */
       function divide(a, b) {
         return a / b;
       }

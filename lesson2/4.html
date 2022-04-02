@@ -39,6 +39,7 @@
        * Сложить два числа.
        * @param {number} a - Значение a.
        * @param {number} b - Значение b.
+       * @returns {number} Сумма a и b
        */
       function sum(a, b) {
         return a + b;
@@ -48,19 +49,20 @@
        * Вычесть из большего числа меньшее.
        * @param {number} a - Значение a.
        * @param {number} b - Значение b.
+       * @returns {number} Разница чисел по модулю
        */
       function diff(a, b) {
         if (a > b) {
           return a - b;
-        } else {
-          return b - a;
         }
+        return b - a;
       }
 
       /**
        * Умножить два числа.
        * @param {number} a - Значение a.
        * @param {number} b - Значение b.
+       * @returns {number} Произведение a и b.
        */
       function multiply(a, b) {
         return a * b;
@@ -70,6 +72,7 @@
        * Разделить первое число на второе.
        * @param {number} a - Значение a.
        * @param {number} b - Значение b.
+       * @returns {number} Частное a и b.
        */
       function divide(a, b) {
         return a / b;
